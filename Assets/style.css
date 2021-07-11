@@ -1,0 +1,22 @@
+
+h1{
+    font-size: 300%;
+    font-weight: bolder;
+    margin: 20px;
+}
+#City_Name_Div{
+    display: inline-flex;
+}
+.Main{
+    margin: 2%;
+    height: auto;
+}
+#Main_Data{
+    display: flex
+}
+#Search_History{
+    margin: 10px;
+}
+.History_Button{
+    margin: 5px;
+}

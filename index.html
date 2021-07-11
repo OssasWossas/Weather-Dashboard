@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/style.css">
+  <title>Weather DashBoard</title>
+</head>
+
+<body>
+
+    <header class="p-3 mb-2 bg-dark text-white d-flex justify-content-center">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div id="Search_Box" class="container d-flex justify-content-center">
+        <div class="card mt-5 p-4 shadow p-3 mb-5 bg-dark rounded">
+            <div class="input-group mb-3"> <input id="The_Search_Field" type="text" placeholder="Search City" class="form-control">
+                <div class="input-group-append"><button id="The_Search_Button" class="btn btn-primary"><i class="fas fa-search"></i></button></div>
+            </div>
+    </div>
+    </div>
+
+    <section class="Main ">
+        <div class="row shadow-lg p-3 mb-5 bg-dark rounded">
+            <div class="col text-white History">
+                <div id="Search_History">
+
+                </div>
+            </div>
+    </section>
+    
+    <section class="Main">
+        <div class="row shadow-lg p-3 mb-5 bg-dark rounded">
+            <div class="col text-white">
+                <div id="City_Name_Div">
+                    <h1 id="City_Name">Uganda</h1><img id="Weather_Icon"src="">
+                </div>
+                <h1 id="currentDay"></h1>
+            </div>
+            <div class="col">
+                <ul id="Main_Data" class="list-group">
+                    <li class="list-group-item">Temp: poop</li>
+                    <li class="list-group-item">Wind: not poop</li>
+                    <li class="list-group-item">Humidity: Hi </li>
+                    <li class="list-group-item active">UV Index: Hello</li>
+                </ul>
+            </div>
+    </section>
+    
+    <section class="Main">
+        <div class="row shadow-lg p-3 mb-5 bg-dark rounded">
+            <div class="col text-white">
+             
+            </div>
+    </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./Assets/script.js"></script>
+</body>
+
+</html>
