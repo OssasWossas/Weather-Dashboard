@@ -4,6 +4,10 @@ h1{
     font-weight: bolder;
     margin: 20px;
 }
+h2{
+    font-size: 150%;
+    font-weight: bold;
+}
 #City_Name_Div{
     display: inline-flex;
 }
@@ -19,4 +23,10 @@ h1{
 }
 .History_Button{
     margin: 5px;
+}
+#CARDS{
+    display: inline-flex;
+}
+.card{
+    margin-left: 5%;
 }
