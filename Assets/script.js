@@ -5,6 +5,7 @@ var today_date = moment().format("dddd, MMMM Do") ;
 const The_Search_Button = document.getElementById('The_Search_Button');
 const The_Search_Field = document.getElementById('The_Search_Field');
 const Search_History = document.getElementById('Search_History');
+
 const CARDS = document.getElementById('CARDS');
 var History_Button = "";
 const API_KEY = "abf1e1cc656d2b8163004add681e213a";
@@ -139,8 +140,20 @@ function Main(){
         fetch(UV_Index)
             .then(response => response.json())
             .then(data => {
-                var uvi = data['current']['uvi'];
+                 uvi = data['current']['uvi'];
                 Main_UL.children[3].textContent = "UV Index: " + uvi;
+                var UV_Index = document.getElementsByClassName('active');
+
+                if( uvi == 0){
+                    document.getElementsByClassName('active')[0].style.backgroundColor = "green";
+
+                }
+                else if( uvi < 3 ){
+                    document.getElementsByClassName('active')[0].style.backgroundColor = "orange";
+                }
+                else{
+                    document.getElementsByClassName('active')[0].style.backgroundColor = "red";
+                }
             });
 
 
